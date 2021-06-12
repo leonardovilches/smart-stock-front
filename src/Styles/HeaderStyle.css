@@ -1,0 +1,141 @@
+
+.headerContainer {
+
+    grid-area: head;
+    background-color: var(--black);
+    box-sizing: border-box;
+
+    border-bottom: solid 5px var(--detailColor);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.headerRight {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLeft {
+    height: 100%;
+    display: flex;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLeft img {
+    width: 3rem;
+    height: 3rem;
+
+    image-rendering: auto;
+}
+
+.headerLeft h1{
+    box-sizing: border-box;
+    margin: 0 0.25rem;
+    margin-bottom: 5px;
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+.accountCont img{
+    box-sizing: border-box;
+    width: 3rem;
+    height: 3rem;
+
+    transition: 1.5s border;
+}
+
+.accountCont img:hover {
+    border: solid 1px var(--white);
+    border-radius: 50%;
+
+    transition: 1.5s border;
+
+    cursor: pointer;
+}
+
+.accountCont {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0 1rem; 
+    align-items: center;
+}
+
+.accountCont p {
+    color: white;
+    margin: 1rem;
+
+    font-size: 1.25rem;
+    font-family: 'Cairo';
+}
+
+.buttonsCont {
+    box-sizing: border-box;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;    
+}
+
+.buttonsCont button {
+    box-sizing: border-box;
+    margin: 0 0.2rem;
+    width: 10rem;
+
+    border-radius: 2px;
+    
+    font-family: 'Cairo';
+    letter-spacing: 2px;
+
+    transition: all 0.5s;
+}
+
+.buttonsCont button:last-child {
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primaryColor);
+    font-weight: 600;
+    border: none;
+    line-height: 2.5rem;
+}
+
+.buttonsCont button:first-child {
+    line-height: calc(2.5rem - 2px);
+    color: var(--primaryColor);
+    font-size: 1.4rem;
+    background: none;
+    border: solid 1px var(--primaryColor);
+}
+
+
+.buttonsCont button:hover {
+
+    border: solid 1px var(--white);
+    color: var(--white);
+
+    transform: scale(1.05,1.05);
+    background: none;
+
+    transition: all 0.5s;
+
+    cursor: pointer;
+}
+
+.buttonsCont button:first-child::after {
+    content: unset;
+}
+
+.buttonsCont button:active {
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    transform: scale(1.07,1.07);
+    transition: 0.1s;
+}

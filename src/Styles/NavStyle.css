@@ -1,0 +1,65 @@
+.navContainer {
+    grid-area: nav;
+    background-color: var(--primaryColor);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navContainer button:first-child {
+    padding: 0.25rem 0.625rem;
+}
+
+.navContainer button:last-child {
+   margin-top: auto;
+}
+
+.navContainer button {
+    box-sizing: content-box;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0.75rem 0.625rem;
+
+    outline: none;
+    background: none;
+    border: none;  
+    
+    cursor: pointer;
+}
+
+.navContainer button img {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.navContainer button:first-child:hover {
+    background: none;
+}
+
+.navContainer button:first-child:focus {
+    background: none;
+}
+
+.navContainer button:hover {
+    background-color: #FF8E8E;
+}
+
+.navContainer button:focus {
+    background-color: #FF8E8E;
+}
+
+.navContainer button:focus img {
+    transform: scale(1.07,1.07);
+    transition: 0.5s;
+}
+
+.navContainer button:hover img {
+    transform: scale(1.07,1.07);
+    transition: 0.5s;
+}
+
+.navContainer button img {
+    transition: 0.5s;
+}
